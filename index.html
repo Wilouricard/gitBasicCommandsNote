@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Git and GitHub basic commands</title>
+</head>
+<body class="font-mono m-8 bg-green-100">
+
+    <div id="header" class="text-center bg-slate-300 m-8 p-6 rounded-2xl">
+        <h1 class="text-blue-900 text-2xl font-extrabold tracking-widest">SELF NOTES GIT BASIC COMMANDS</h1>
+        <p class="italic">Git basic commands and blueprint to commit project from local to GitHub. <br>-Wilou 31/08/2022</p>
+    </div>
+
+    <div id="blueprint local-repository" class="bg-pink-200 p-5 rounded-2xl mb-5">
+        <h4 class="text-center text-blue-900 text-xl pt-1 pb-2">Project commit for the first time</h4>
+        <p class="italic p-3">Select the folder and right click on it. Then click on "Git Bash Here". Once the terminal open, enter those commands:</p>
+        <ul class="text-red-900">
+            <li><strong>$ git init</strong>: to initialize local git repository for the selected folder.</li>
+            <li><strong>$ git add <code>file.name</code></strong>: to add the selected file to index.</li>
+            <li><strong>$ git add .</strong> : to add the all files to index.</li>
+            <li><strong>$ git status</strong>: to check the status of the working tree. To use at each step of the commitment process to check file status.</li>
+            <li><strong>$ git rm --cached <code>file.name</code></strong>: to remove an added file.</li>
+            <li><strong>$ git commit</strong>: it will open the text editor, un-comment the line "initialize..." and close. It will automatically commit.</li>
+            <li><strong>$ git commit -m <em>'comment'</em></strong>: to commit all files without opening the text editor.</li> 
+    </div>
+    
+    <div id="remote-repository" class="bg-pink-200 p-5 rounded-2xl">
+            <h4 class="text-center text-blue-900 text-xl pt-1 pb-2">To commit on remote repository</h4>
+            <p class="italic p-3">Once all files commited, next part will be about commiting on remote repository GitHub. First thing to do is to go on GitHub and create a new repository.</p>
+            <p class="italic p-3">Follow GitHub blueprint which are the <strong>"…or create a new repository on the command line"</strong> section, starting from the branch command: </p>
+            <ul class="text-red-900">
+                <li><strong>$ git branch -M main</strong>: to go on the 'main' branch.</li>
+                <li><strong>$ git remote add origin <em>https://github-link.git</em></strong>: to link the remote repository with the local one.</li>
+                <li><strong>$ git push -u origin main</strong>: to push the local repository to the remote one.</li>
+            </ul>
+
+            <p class="italic p-3">If someone is working on the same remote repository, and you need to get the updated file:</p>
+
+            <ul class="text-red-900">
+                <li><strong>$ git pull</strong>: to pull remote repository to the local one. It will update the local files.</li>
+            </ul>
+
+
+            <p class="italic p-3">If you want to clone a repository:</p>
+            <ul class="text-red-900">
+                <li><strong>$ git clone</strong>: to clone repository into a new directory.</li>
+            </ul>
+          
+            
+    </div>
+
+
+
+        
+   
+</body>
+</div>
+</body>
+</html>
